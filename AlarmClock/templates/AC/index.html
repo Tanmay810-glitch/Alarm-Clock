@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <title>Alarm</title>
+    <meta name= "description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href="">
+    {% load static %}
+   <script src="{% static 'AC.js' %}" type="text/javascript"></script>
+</head>
+<body>
+        <h3>Set Alarm</h3>
+
+        <form>
+            {% csrf_token %}
+            <label for="alarm">Alarm</label>
+            <input type="text" id="alarm" name="alarm" placeholder="Enter the time in yyyy-mm-dd hh:mm:ss" required>
+            <br>
+            <br>
+
+            <button type="submit" id="set"> Set </button>
+        </form>
+
+
+
+</body>
+</html>

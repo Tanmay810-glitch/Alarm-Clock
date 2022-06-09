@@ -1,0 +1,21 @@
+COMMAND(S):
+===========
+python manage.py runserver - For starting the website
+
+
+LABELS:
+=======
+
+AC - The name of the app
+
+AlarmClock - The name of the project
+
+statics - Contains the .js file for Alarm functionality
+
+templates - Contains the HTML file for displaying the webpage
+
+
+ISSUES:
+=======
+
+The .js file isn't detected in the browser (Inspect Element -> Console)
